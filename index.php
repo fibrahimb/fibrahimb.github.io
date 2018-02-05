@@ -8,12 +8,14 @@ if(isset($_POST['submit'])){
     $subject2 = "Copy of your form submission";
     $message = $firstname . " " . $lastname . " wrote the following:" . "\n\n" . $_POST['subject'];
     $message2 = "Here is a copy of your message " . $firstname . "\n\n" . $_POST['subject'];
-
-    $headers = "From:" . $from;
+    $headers = 'From: ' . $_POST['firstname'] . ' <fibrahimb@berkeley.edu>' . "\r\n" .
+    'Reply-To: fibrahimb@berkeley.edu' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    /*$headers = "From:" . $from;*/
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you for visiting, " . $firstname . ". I will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    header('Location: contact-thank-you.html');
+    exit();
     }
 ?>
