@@ -7,6 +7,14 @@ body {
   flex-direction: column;
 }
 
+h1 {
+ text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
 body, p {
   margin: 0;
   padding: 0;
