@@ -25,7 +25,7 @@ if(mail($to,$subject,$message,$headers))
 } 
 Header("location: http://www.fatimaibrahimbiangoro.com/contact-thank-you");
     exit; 
-*/
+
 $first_name = $_POST['firstname']; 
 $email = $_POST['email']; 
 $message = $_POST['subject']; 
@@ -42,8 +42,9 @@ $headers = "From: $from \r\n";
 $headers .= "Reply-To: $from \r\n";
 $headers .= "Return-Path: $from\r\n";
 $headers .= "X-Mailer: PHP \r\n";
-}
 if(isset($email)){
    echo 'Success! Thanks for submitting';
 }
+}
+*/
 ?>
