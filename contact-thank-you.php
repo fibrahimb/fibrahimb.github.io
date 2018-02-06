@@ -18,6 +18,10 @@
     header('Location: fatimaibrahimbiangoro.com/contact-thank-you.html');
     exit();
     }*/
+/*
+Header("location: http://www.fatimaibrahimbiangoro.com/contact-thank-you");
+    exit; 
+*/
 $first_name = $_POST['firstname']; 
 $email = $_POST['email']; 
 $message = $_POST['subject']; 
@@ -36,8 +40,7 @@ $headers .= "Return-Path: $from\r\n";
 $headers .= "X-Mailer: PHP \r\n";
 if(mail($to,$subject,$message,$headers)) 
 {
-    Header("location: http://www.fatimaibrahimbiangoro.com/contact-thank-you");
-    exit;
+    echo "Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
 } 
 }
 ?>
