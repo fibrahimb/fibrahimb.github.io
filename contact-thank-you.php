@@ -42,9 +42,8 @@ $headers = "From: $from \r\n";
 $headers .= "Reply-To: $from \r\n";
 $headers .= "Return-Path: $from\r\n";
 $headers .= "X-Mailer: PHP \r\n";
-if(mail($to,$subject,$message,$headers)) 
-{
-    echo "Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
-} 
+}
+if(isset($email)){
+   echo 'Success! Thanks for submitting';
 }
 ?>
