@@ -55,7 +55,7 @@
         <h2>Let's chat!</h2>
         <h3> Want to contact me? Leave a message down below. </h3>
       </div>
-
+<!--
   <form name="myform" id="myform" action="contact-thank-you.php" method="post">
 <form name="myform" id="myform" class="form-foot" action="/receiving.php" method="post">
     <label for="fname">First Name</label>
@@ -70,9 +70,16 @@
     <label for="subject">Message</label>
     <textarea id="subject" name="subject" placeholder="Write your message here.." style="height:200px"></textarea>
 
-  <input type="submit" value="Send">
+  <input type="submit" value="Submit">
 
   </form>
+-->
+        <form method="post" action="contact-thank-you.php">
+        <h2> Sizes: </h2><select name="sizes"><option value="1">1</option></select>
+        <h2> Email: </h2><input type="text" name="email" />
+        <input type="hidden" value="black" name="color" />
+        <input  type="image" value="submit" src="images/buynow.jpg" />
+        </form>
 </div>
       </div>
 
