@@ -46,7 +46,7 @@ $headers .= "X-Mailer: PHP \r\n";
 
 if(mail($to,$subject,$message,$headers)) 
 {
-    Header("location: fatimaibrahimbiangoro.com/contact-thank-you");
+    Header("location: http://www.fatimaibrahimbiangoro.com/contact-thank-you");
     exit;
 } 
 }
