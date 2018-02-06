@@ -19,6 +19,10 @@
     exit();
     }*/
 /*
+if(mail($to,$subject,$message,$headers)) 
+{
+    echo "Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
+} 
 Header("location: http://www.fatimaibrahimbiangoro.com/contact-thank-you");
     exit; 
 */
