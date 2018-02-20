@@ -18,7 +18,31 @@
     header('Location: fatimaibrahimbiangoro.com/contact-thank-you.html');
     exit();
     }*/
-
+if(mail($to,$subject,$message,$headers)) 
+{
+    echo "Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
+} 
+Header("location: http://www.fatimaibrahimbiangoro.com");
+    exit; 
+$first_name = $_POST['firstname']; 
+$email = $_POST['email']; 
+$message = $_POST['subject']; 
+if(isset($_POST['submit']))
+{
+$from = $_POST['email']; 
+$to = "fibrahimb@berkeley.edu"; 
+$subject = "Contact Form";
+$message = "
+Name:$name \n 
+Email: $email \n 
+Message: $message \n 
+$headers = "From: $from \r\n";
+$headers .= "Reply-To: $from \r\n";
+$headers .= "Return-Path: $from\r\n";
+$headers .= "X-Mailer: PHP \r\n";
+if(isset($email)){
+   echo 'Success! Thanks for submitting';
+}
 
 $first_name = $_POST['firstname']; 
 $email = $_POST['email']; 
