@@ -153,7 +153,7 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
  
-header('Location: www.facebook.com'); //Replace email-success.php with the page you want them to be redirected to!
+header('Location: www.fatimaibrahimbiangoro.com'); //Replace email-success.php with the page you want them to be redirected to!
 }
  
 Thank you for contacting us. We will be in touch with you very soon.
